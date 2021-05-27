@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+</head>
+<body>
+    <div id="pnav">
+        <a href="#" id="enlace" ><h1>Koka Cortes Makeup</h1></a>     
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+#pnav a{
+  box-shadow: 0px 8px 10px -4px #00000069;
+  border-radius: 15px;
+    text-decoration: none;
+    background:url(Koka_Cortes_Make.png) 0 0 no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding-top: 20px;;
+    width:500px;
+    height:300px;
+    -webkit-transition: background-position 5s ease-in-out;
+    -moz-transition: background-position 5s ease-in-out;
+    -ms-transition: background-position 5s ease-in-out;
+    -o-transition: background-position 5s ease-in-out;
+    transition: background-position 5s ease-in-out;
+}
+#pnav a h1{
+  border-radius: 5px;
+    background-color: white;
+     color: #004991;
+     font-size: x-large;
+}
+#pnav a:hover {
+    background-position:0px -1800px;
+     opacity: 0.8;
+}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+    const imgLigthbox = document.getElementById("enlace");
+    M.Materialbox.init(imgLigthbox, {
+        inDuration: 500,
+        outDuration: 500
+    });
+});
+    </script>
+</body>
+</html>
